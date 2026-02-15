@@ -5,8 +5,25 @@
 	 width: 100%;
 	 display: flex;
 }
+	  
+#head ul {
+      display: flex;     /* リストを横並びにする */
+      list-style: none;  /* 点を消す */
+      padding: 0;
+      margin: 0;
+    }
+	  
+#head a {
+      text-decoration: none;
+      color: #333;
+}
+	  
+#head li {
+      margin: 0 15px;    /* 左右の余白 */
+    }
+	  
   </style>
-   <ul class="ul">
+   <ul id="ul">
    <li id="li"><a class="a" href="/index.html">HOME</a></li>
    <li id="li"><a class="a" href="/index.html">ABOUT</a></li>
    </ul>
