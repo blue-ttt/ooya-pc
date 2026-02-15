@@ -7,6 +7,16 @@
 </header>
 
 <body>
-<hi>大谷中パソコン部</hi>
+  <div id="header"></div>
+  
+  <hi>大谷中パソコン部</hi>
+
+  <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+  </script>
   
 </body>
