@@ -18,13 +18,14 @@
 	<h2>404 NOT FOUND</h2>
 	<p>入力されたページは存在しません。URLを見直してみてください。</p>
 
-	  <script>
+  <script>
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
             });
   </script>
+</body>
 	
 </body>
 </html>
