@@ -6,11 +6,25 @@
 	<link rel="stylesheet" href="header.html">
 	<title>404 NOT FOUND</title>
 </head>
-  
+
+<header>
+  <div class=head></div>
+</header>
+
+</header>
 <body>
 	<div id="head"></div>
 	<h3>あれ、サーバーが頭をひねっているよ</h3>
 	<h2>404 NOT FOUND</h2>
 	<p>入力されたページは存在しません。URLを見直してみてください。</p>
+
+	  <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+  </script>
+	
 </body>
 </html>
