@@ -2,6 +2,8 @@
   <title>418 I'm a teapot</title>
 </head>
 <body>
+  <header id="header"></header>
+  
  <h1>418 : I'm a teapot</h1>
  <h3>🫖うわっ！このサイトの管理者はコーヒーを淹れようとしましたが、
 私はティーポットなので、コーヒーを淹れることはできません。☕️</h3>
@@ -14,5 +16,13 @@
   width: 100%;
   }
  </style>
+
+      <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+  </script>
   
 </body>
