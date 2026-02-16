@@ -27,15 +27,37 @@ h1{
 	  
 #head a {text-decoration: none;　color: #333;}
 #head li {margin: 0 15px;    /* 左右の余白 */}
+
+.button {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #f8f9fa; /* 薄いグレーの背景 */
+  color: #3c4043; /* 文字色 */
+  text-decoration: none; /* 下線を消す */
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #dadce0; /* 薄い枠線 */
+  border-radius: 4px; /* 角の丸み */
+  transition: box-shadow 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f1f3f4; /* ホバー時に少し濃く */
+  border: 1px solid #d2d5d9;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1); /* 軽い影 */
+  color: #202124;
+}
 	  
   </style>
    <header id=head>
    <h1>大谷中PC部</h1>
    <ul id="ul">
-   <li id="li"><a class="a" href="/ooya-pc/index.html">ホーム</a></li>
-   <li id="li"><a class="a" href="/ooya-pc/index.html">活動</a></li>
-   <li id="li"><a class="a" href="/ooya-pc/index.html">ブログ</a></li>
-   <li id="li"><a class="a" href="/ooya-pc/index.html">coffee</a></li>
+   <li id="li"><a class="a button" href="/ooya-pc/index.html">ホーム</a></li>
+   <li id="li"><a class="a button" href="/ooya-pc/index.html">活動</a></li>
+   <li id="li"><a class="a button" href="/ooya-pc/index.html">ブログ</a></li>
+   <li id="li"><a class="a button" href="/ooya-pc/index.html">coffee</a></li>
 
 
 </header>
