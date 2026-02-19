@@ -9,10 +9,7 @@ body {
 }
 	
 header{
-     display: inline-flex; /* inline-blockから変更 */
-     align-items: center;  /* 上下の中央揃え */
-	
-     height: 80px;
+	 height: 80px;
 	 width: 100%;
 	 display: flex;
 	 align-items: center;    /* ★上下の真ん中に寄せる */
@@ -38,7 +35,9 @@ header li {margin: 0 15px;    /* 左右の余白 */}
 
 
 .button {
-  display: inline-block;
+  display: inline-flex; /* inline-blockから変更 */
+  align-items: center;  /* 上下の中央揃え */
+	
   padding: 10px 24px;
   background-color: #f8f9fa; /* 薄いグレーの背景 */
   color: #3c4043; /* 文字色 */
