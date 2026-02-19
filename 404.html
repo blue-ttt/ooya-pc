@@ -3,12 +3,14 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://blue-ttt.github.io/ooya-pc/style.css">
+    <script src="https://blue-ttt.github.io/ooya-pc/script.js"></script>
 	<title>404 NOT FOUND</title>
 </head>
 
 <body>
 	<header>
-  <div class=head></div>
+  <div class=header></div>
 </header>
 
 	<div id="header"></div>
@@ -16,13 +18,6 @@
 	<h2>404 NOT FOUND</h2>
 	<p>入力されたページは存在しません。URLを見直してみてください。</p>
 
-  <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            });
-  </script>
 </body>
 	
 </html>
